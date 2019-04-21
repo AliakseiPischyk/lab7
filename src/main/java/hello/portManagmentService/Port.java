@@ -14,7 +14,7 @@ public class Port {
 
 
     public Port(final Warehouse warehouse, final List<Dock> docks)throws NegativeDimensionException{
-        this.ID = ID_s.generate();
+        this.ID = new ID_s().generate();
         this.warehouse = warehouse;
         this.docks.addAll(docks);
     }
