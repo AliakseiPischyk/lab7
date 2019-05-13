@@ -12,19 +12,16 @@ public class SquareMetersTest {
 
     @Test(expected = NegativeDimensionException.class)
     public void NegativeSquareMeters() throws NegativeDimensionException {
-
         squareMeters1 = new SquareMeters((short)-1,(short)-1);
-
-
     }
-    @Test
-    public void calculate() {
-        try{
-           squareMeters1 = new SquareMeters((short)5,(short)5);
-           squareMeters2 = new SquareMeters((short)50,(short)50);
-           squareMeters3 = new SquareMeters((short)100,(short)100);
 
-        }catch (final NegativeDimensionException e){}
+    @Test
+    public void calculate() throws NegativeDimensionException {
+
+        squareMeters1 = new SquareMeters((short)5,(short)5);
+        squareMeters2 = new SquareMeters((short)50,(short)50);
+        squareMeters3 = new SquareMeters((short)100,(short)100);
+
         assertEquals(25,squareMeters1.calculate());
         assertEquals(2500,squareMeters2.calculate());
         assertEquals(10000,squareMeters3.calculate());

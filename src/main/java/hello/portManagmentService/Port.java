@@ -1,8 +1,7 @@
 package hello.portManagmentService;
 
 import hello.geometry.VolumeMeters3;
-import hello.id_s.ID_s;
-import hello.NegativeDimensionException;
+import hello.ids;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -13,8 +12,8 @@ public class Port {
     private Warehouse warehouse;
 
 
-    public Port(final Warehouse warehouse, final List<Dock> docks)throws NegativeDimensionException{
-        this.ID = new ID_s().generate();
+    public Port(final Warehouse warehouse, final List<Dock> docks){
+        this.ID = new ids().generate();
         this.warehouse = warehouse;
         this.docks.addAll(docks);
     }

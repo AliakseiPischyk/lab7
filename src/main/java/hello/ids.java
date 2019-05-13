@@ -1,8 +1,8 @@
-package hello.id_s;
+package hello;
 
 import java.util.*;
 
-public class ID_s {
+public class ids {
     private List<Integer> usedIDs = new LinkedList<>();
     private List<Integer> removedIDs = new LinkedList<>();
 
