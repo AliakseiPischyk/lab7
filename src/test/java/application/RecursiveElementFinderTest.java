@@ -1,5 +1,6 @@
-package Application;
+package application;
 
+import application.controllers.RecursiveElementFinderController;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class RecursiveElementFinderTest {
     private List<Integer> list1 = new ArrayList<>();
-    private RecursiveElementFinder recursiveElementFinder = new RecursiveElementFinder();
+    private RecursiveElementFinderController recursiveElementFinder = new RecursiveElementFinderController();
 
     @Before
     public void setList1() {
