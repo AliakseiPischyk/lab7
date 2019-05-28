@@ -1,5 +1,6 @@
 package application;
 
+import application.buisnessLogic.ElementRemover;
 import application.controllers.ElementRemoverController;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,7 +29,7 @@ public class ElementRemoverTest {
     public void excludeRepeatingElements() {
 
         List<Integer> result = new ArrayList<Integer>() {{
-            addAll(new ElementRemoverController().excludeRepeatingElements(list1));
+            addAll(new ElementRemover().excludeRepeatingElements(list1));
         }};
         List<Integer> listWithoutRepeatingElems = new ArrayList<>();
         listWithoutRepeatingElems.add(555);
